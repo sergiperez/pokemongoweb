@@ -44,8 +44,22 @@
                                   	$(".pokemon").attr("src","");
 					array_questions.splice(num,1);
 					array_pokemons.splice($(".pokemon").attr("id"),1);
-				  }	
-				  notAnswer = true;
+				  }
+				  if (array_questions.length == 0)
+				  {		
+					alert("Felicitats has resolt totes les preguntes!");
+				  }
+  				  else
+				 {
+					if (array_pokemons.length == 0)
+				  	{		
+						alert("Felicitats has caçat tots els pokemons!");
+				  	}
+					else
+					{
+					  	notAnswer = true;
+					}
+				 }	
 			  });
  			  setInterval(function(){ 
 				var num = Math.floor(Math.random() * (array_pokemons.length + 1))+1;
