@@ -1,0 +1,13 @@
+
+{
+  "question": [{
+    "id": 1,
+    "question": "2² X 2⁴ : 2³",
+    "correct": "2³"
+  }, {
+    "id": 2,
+    "question": "(2²)⁵ X 2⁴ : 2⁻¹⁷",
+    "correct": "2³¹"
+  }]
+}
+

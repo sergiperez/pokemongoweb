@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>		
+		<script language="javascript">
+			$( document ).ready(function() {
+			   var array_pokemons = [];
+			   var array_questions = [];
+			   var notAnswer = true;	
+			   var score = 0;	
+			   $.ajax({
+			    async: false,
+			    url: 'data/pokemon.json',
+			    success: function(data) {
+   				var pokemons = data.pokemon;
+				for(var i = 0; i< pokemons.length; i++){
+					array_pokemons.push(pokemons[i]);
+				}
+			    },
+			    error: function() {
+			        alert("No es carrega correctament les dades del pokemon");
+			    }});
+			   $.ajax({
+			    async: false,
+			    url: 'data/questions.json',
+			    success: function(data) {
+   				var questions = data.question;
+				for(var i = 0; i< questions.length; i++){
+					array_questions.push(questions[i]);
+				}
+			    },
+			    error: function() {
+			        alert("No es carrega correctament les preguntes");
+			    }
+			  });
+			  $("#pokemon").click(function(){
+                                  notAnswer = false;
+				  var num = Math.floor(Math.random() * (array_questions.length + 1));	
+				  var answer = prompt(array_questions[num].question);
+				  if (answer.localeCompare(array_questions[num].correct)==0)	
+				  {	
+				  	score=score+1;
+				  	$("#score").html("<p>"+score+"</p>");	
+				  	$("#motxilla").html($("#motxilla").html()+"<img src='" + $("#pokemon").attr("src")+"' />");
+                                  	$("#pokemon").attr("src","");
+				  }	
+				  notAnswer = true;
+			  });
+ 			  setInterval(function(){ 
+				var num = Math.floor(Math.random() * (array_pokemons.length + 1))+1;
+                                var nomImg = "";
+				if (num < 10)
+				{
+					nomImg ="00"+num+".png";
+				}
+				else
+				{
+					if (num < 100)
+					{
+						nomImg ="0"+num+".png";
+					}
+					else
+					{
+						nomImg =num+".png";
+					}
+				}	
+				var imgTop = Math.floor(Math.random() * (400-120));
+				var imgLeft = Math.floor(Math.random() * (600-120));
+				if (notAnswer)
+				{
+					$("#pokemon").attr("src","images/"+nomImg);
+					$("#pokemon").css("position","absolute");
+					$("#pokemon").css("top",imgTop+"px");
+					$("#pokemon").css("left",imgLeft+"px");
+				}
+				}, 2000);
+			});
+		</script>
+	</head>
+	<body>
+		<div id="tauler" style="background-color:gray;width:600px;height:400px;"><img id="pokemon"/></div>
+		<div id="motxilla"></div>
+		<div id="score"></div>
+	</body>
+</html>
