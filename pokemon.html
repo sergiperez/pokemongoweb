@@ -32,7 +32,7 @@
 			        alert("No es carrega correctament les preguntes");
 			    }
 			  });
-			  $("#pokemon").click(function(){
+			  $(".pokemon").click(function(){
                                   notAnswer = false;
 				  var num = Math.floor(Math.random() * (array_questions.length + 1));	
 				  var answer = prompt(array_questions[num].question);
@@ -40,8 +40,10 @@
 				  {	
 				  	score=score+1;
 				  	$("#score").html("<p>"+score+"</p>");	
-				  	$("#motxilla").html($("#motxilla").html()+"<img src='" + $("#pokemon").attr("src")+"' />");
-                                  	$("#pokemon").attr("src","");
+				  	$("#motxilla").html($("#motxilla").html()+"<img src='" + $(".pokemon").attr("src")+"' />");
+                                  	$(".pokemon").attr("src","");
+					array_questions.splice(num,1);
+					array_pokemons.splice($(".pokemon").attr("id"),1);
 				  }	
 				  notAnswer = true;
 			  });
@@ -67,17 +69,18 @@
 				var imgLeft = Math.floor(Math.random() * (600-120));
 				if (notAnswer)
 				{
-					$("#pokemon").attr("src","images/"+nomImg);
-					$("#pokemon").css("position","absolute");
-					$("#pokemon").css("top",imgTop+"px");
-					$("#pokemon").css("left",imgLeft+"px");
+					$(".pokemon").attr("id",num);					
+					$(".pokemon").attr("src","images/"+nomImg);
+					$(".pokemon").css("position","absolute");
+					$(".pokemon").css("top",imgTop+"px");
+					$(".pokemon").css("left",imgLeft+"px");
 				}
 				}, 2000);
 			});
 		</script>
 	</head>
 	<body>
-		<div id="tauler" style="background-color:gray;width:600px;height:400px;"><img id="pokemon"/></div>
+		<div id="tauler" style="background-color:gray;width:600px;height:400px;"><img class="pokemon"/></div>
 		<div id="motxilla"></div>
 		<div id="score"></div>
 	</body>
