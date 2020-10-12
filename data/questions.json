@@ -1,13 +1,144 @@
 
 {
   "question": [{
-    "id": 1,
-    "question": "2² X 2⁴ : 2³",
+    "question": "Expressa en una sola potència 2² X 2⁴ : 2³",
     "correct": "2³"
   }, {
-    "id": 2,
-    "question": "(2²)⁵ X 2⁴ : 2⁻¹⁷",
+    "question": "Expressa en una sola potència (2²)⁵ X 2⁴ : 2⁻¹⁷",
     "correct": "2³¹"
-  }]
+  },
+  {
+    "question": "Expressa en una sola potència 1 x 1 x 1",
+    "correct": "1³"
+  },
+  {
+    "question": "Expressa en una sola potència 2 x 2 x 2 x 2",
+    "correct": "2⁴"
+  },
+  {
+    "question": "Expressa en una sola potència 4 x 4 x 4",
+    "correct": "4³"
+  },
+  {
+    "question": "Expressa en una sola potència 6 x 6 x 6 x 6 x 6 ",
+    "correct": "6⁵"
+  },
+  {
+    "question": "Expressa en una sola potència 16 x 16 x 16 x 16 x 16 x 16 x 16 x 16 x 16 x 16 ",
+    "correct": "16¹⁰"
+  },
+  {
+    "question": "Expressa en producte 15⁴ (sense espais)",
+    "correct": "15x15x15x15"
+  },
+  {
+    "question": "Expressa en producte 43⁶ (sense espais)",
+    "correct": "43x43x43x43x43x43"
+  },
+  {
+    "question": "Expressa en producte 1³ (sense espais)",
+    "correct": "1x1x1"
+  },
+  {
+    "question": "Digues si és positiu (+) o negatiu (-). 2³",
+    "correct": "+"
+  },
+  {
+    "question": "Digues si és positiu (+) o negatiu (-). -2⁴",
+    "correct": "-"
+  },
+  {
+    "question": "Digues si és positiu (+) o negatiu (-). (-2)⁴",
+    "correct": "+"
+  },
+  {
+    "question": "Digues si és positiu (+) o negatiu (-). (-3)³",
+    "correct": "-"
+  },
+  {
+    "question": "Digues si és positiu (+) o negatiu (-). 13³",
+    "correct": "+"
+  },
+  {
+    "question": "Digues si és positiu (+) o negatiu (-). -121³",
+    "correct": "-"
+  },
+  {
+    "question": "Digues si és positiu (+) o negatiu (-). (-9)⁴",
+    "correct": "+"
+  },
+  {
+    "question": "Digues si és positiu (+) o negatiu (-). 17³",
+    "correct": "+"
+  },
+  {
+    "question": "Digues si és positiu (+) o negatiu (-). -11²",
+    "correct": "-"
+  },
+  {
+    "question": "Digues si és positiu (+) o negatiu (-). (-11)³",
+    "correct": "-"
+  },
+  {
+    "question": "Expressa en una sola potència 2² x 2³ ",
+    "correct": "2⁵"
+  },
+  {
+    "question": "Expressa en una sola potència (-7)³ X (-7)⁵ ",
+    "correct": "7⁸"
+  },
+  {
+    "question": "Expressa en una sola potència 4⁵ x 4⁶ x 4² ",
+    "correct": "4¹³"
+  },
+  {
+    "question": "Expressa en una sola potència (-3)³ X (-3) ",
+    "correct": "3⁴"
+  },
+  {
+    "question": "Expressa en una sola potència  7⁸ X (-7)⁵ ",
+    "correct": "-7¹³"
+  },
+  {
+    "question": "Expressa en una sola potència (-6)⁵ · (-6)·(-6)⁴ ",
+    "correct": "6¹⁰"
+  }, 
+  {
+    "question": "Expressa en una sola potència (-2)³ · (-2) · (-2) · (-2)⁵ ",
+    "correct": "2¹⁰"
+  },
+  {
+    "question": "Expressa en una sola potència 4⁹ · 4⁵ · 4³ ",
+    "correct": "4¹⁷"
+  },
+  {
+    "question": "Expressa en una sola potència 4⁶ : 4²  ",
+    "correct": "4⁴"
+  },
+  {
+    "question": "Expressa en una sola potència (-3)³ : (-3) ",
+    "correct": "3²"
+  },
+  {
+    "question": "Expressa en una sola potència 7⁸ : 7⁵ : 7³ ",
+    "correct": "7⁰"
+  },
+  {
+    "question": "Expressa en una sola potència 6⁵ · 6 : 6⁴ ",
+    "correct": "6²"
+  },
+  {
+    "question": "Expressa en una sola potència 2³ · 2 · 2 : 2³ ",
+    "correct": "2²"
+  },
+  {
+    "question": "Expressa en una sola potència 4⁹ : 4⁵ · 4² ",
+    "correct": "4⁶"
+  },
+  {
+    "question": "Expressa en una sola potència ((2⁵ · 2⁴))⁴ ",
+    "correct": "2³⁶"
+  },
+]
 }
 
